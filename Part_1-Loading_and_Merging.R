@@ -34,9 +34,9 @@ library(readxl)  # function: read_excel()   --> to load Excel files (.xlsx files
 library(sf)      # function: st_read()      --> to read .geojson files
 
 
-################################
+###############################
 ### 1. Cleaning environment ###
-################################
+###############################
 
 # Deleting stored variables
 rm(list=ls()) 
