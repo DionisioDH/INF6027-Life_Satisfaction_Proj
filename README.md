@@ -1,3 +1,16 @@
+# Project Information
+----------------------------------------
+
+**Name**: Life_Satisfaction_Eng_Project
+
+**Description**: This is the final project for INF6027 (Intro to DS) at The University of Sheffield. It is entitled "Area-Level Analysis of Life Satisfaction in England and Associated Factors". It uses 4 datasets from the UK's Office for National Statistics, primarily it uses local indicators ([ONS Local Indicators Datasets](https://explore-local-statistics.beta.ons.gov.uk/indicators)).
+
+# Instructions to Execute This Project
+----------------------------------------
+
+1. Download the "Life Satisfaction - Project.Rproj" project file.
+2. Download the 4 datasets (following steps in the section below or from the "Data" folder in GitHub).
+3. Run the `.R` files in order (1 through 6).
 
 # Instructions to Download the Datasets (Directly from the ONS Website)
 -----------------------------------------
