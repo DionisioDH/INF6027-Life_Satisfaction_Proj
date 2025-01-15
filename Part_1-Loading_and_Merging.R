@@ -70,7 +70,7 @@ library(sf)      # function: st_read()      --> to read .geojson files
 
 
 ################################
-### 1. Clearning environment ###
+### 1. Cleaning environment ###
 ################################
 
 # Deleting stored variables
