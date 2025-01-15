@@ -1,0 +1,71 @@
+
+###################################################################################
+#
+# (File 3/6)
+# 
+# Project                     : Area-Level Analysis of Life Satisfaction in England
+
+# Author                      : Dionisio V. Del Orbe H.
+
+# .R file name                : Part_3-Urbanicity_boxplot.R (file 3 of 6 in project)
+
+# Purpose                     : Boxplot (urban/rural classificaiton)
+
+# Output data.frame           : N/A
+
+# Output image                : Boxplot in section 1 (export size: width = 630 & height = 450)
+
+# Date                        : Jan 16th, 2025
+
+# Pre-run another .R file?    : Yes, first run "Part_1-Loading_and_Mergin.R" 
+
+#
+###################################################################################
+
+################################################
+### 0. Loading Packages used in this .R file ###
+################################################
+
+# No additional package in this .R file
+
+###################################################################
+### 1. Boxplot: Life satisfaction vs Urban/rural classification ###
+###################################################################
+
+Indicators_merged |> 
+  ggplot(aes(Rural_Classification, satisfaction)) +
+  geom_boxplot(fill = "lightgray", width = 0.5) +
+  geom_hline(aes(yintercept = 7.68, color = "Average life satisfaction\nin England (7.68)"),
+             linetype = "dashed", linewidth = 0.8) +
+  labs(y="Life Satisfaction", x = NULL, color = "Horizontal Line") + 
+  theme_classic() +
+  scale_color_manual(values = c("Average life satisfaction\nin England (7.68)" = "#FF2D55")) +
+  scale_x_discrete(
+    labels = c("Mainly Rural (rural including hub towns >=80%)" = "Mainly\nRural",
+               "Largely Rural (rural including hub towns 50-79%)"  = "Largely\nRural",
+               "Urban with Significant Rural (rural including hub towns 26-49%)" = "Urban\n(Significant\nRural)",
+               "Urban with City and Town"  = "Urban\n(City &\n Town)",
+               "Urban with Minor Conurbation" = "Urban\n(Minor\nConur-\nbation)", 
+               "Urban with Major Conurbation" = "Urban\n(Major\nConur-\nbation)"))+
+  theme(
+    legend.position = "top",
+    legend.justification = "right",
+    legend.text = element_text(size = 13),
+    legend.title = element_blank(),
+    legend.key.size = unit(0.4, "cm"),
+    legend.background = element_rect(fill = "transparent", color = "gray"),
+    legend.margin = margin(0.45, 0.45, 0.45, 0.45), 
+    legend.box.margin = margin(0.1, 0.1, 0.1, 0.1),
+    axis.text = element_text(size = 13),
+    axis.title = element_text(size = 16),
+    axis.text.x = element_text(angle = 0))+
+  annotate("segment", x = 1.7, xend = 5.3, y = 6.95, yend = 6.95,
+           arrow = arrow(type = "open",length = unit(0.125, "inches")), size = .6, color = "darkgray")+
+  annotate("label", x = 0.5, y = 6.85, label = "Most Rural", hjust = 0, vjust = 0, size = 4.6, color = "#585858") +
+  annotate("label", x = 5.5, y = 6.85, label = "Most Urban", hjust = 0, vjust = 0, size = 4.6, color = "#585858")+
+  annotate("text", x = 1, y = 8.375, label = "n = 42", hjust = 0.5, vjust = 0.5, size = 4, color = "#585858")+
+  annotate("text", x = 2, y = 8.375, label = "n = 36", hjust = 0.5, vjust = 0.5, size = 4, color = "#585858")+
+  annotate("text", x = 3, y = 8.375, label = "n = 46", hjust = 0.5, vjust = 0.5, size = 4, color = "#585858")+
+  annotate("text", x = 4, y = 8.375, label = "n = 87", hjust = 0.5, vjust = 0.5, size = 4, color = "#585858")+
+  annotate("text", x = 5, y = 8.375, label = "n = 9", hjust = 0.5, vjust = 0.5, size = 4, color = "#585858")+
+  annotate("text", x = 6, y = 8.375, label = "n = 73", hjust = 0.5, vjust = 0.5, size = 4, color = "#585858")
