@@ -24,12 +24,12 @@
 
 # Instructions to executing this project
 # ----------------------------------------
-#     1. Download "Life Satisfaction - Project.Rproj" project file
-#     2. Download the 4 datasets (following steps in section below)
+#     1. Download the "Life Satisfaction - Project.Rproj" project file
+#     2. Download the 4 datasets (following steps in section below or from the "Data" folder in GitHub)
 #     3. Run the .R files in order (1 through 6); this is the 1st .R file.
 
 
-# Instructions to downloading the data sets
+# Instructions to downloading the data sets (directly from the ONS website)
 # -----------------------------------------
 #     1. Download the indicators dataset 
 #           from https://explore-local-statistics.beta.ons.gov.uk/indicators/wellbeing-satisfaction
