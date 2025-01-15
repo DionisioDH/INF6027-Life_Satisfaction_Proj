@@ -45,7 +45,7 @@ rm(list=ls())
 ### 2. Loading variables from the "ONS_Indicators_dataset.ods" dataset  ###
 ###########################################################################
 
-year_analysis_num = 2017 # For this entire project, the year is 2017
+year_analysis_num = 2017 # For this entire project, the year is 2017 (it should not be changed)
 
 #2.1 Defining the function to load the indicators:
 Get_Indicator <- function(sheet_num, year_chosen = year_analysis_num, original_col_name, given_column_name){
