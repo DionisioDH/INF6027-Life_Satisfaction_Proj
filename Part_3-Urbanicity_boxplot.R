@@ -32,6 +32,10 @@
 ### 1. Boxplot: Life satisfaction vs Urban/rural classification ###
 ###################################################################
 
+# EDA
+Indicators_merged |> group_by(Rural_Classification) |> summarise(samples_per_classification = n())
+
+# Analysis
 Indicators_merged |> 
   ggplot(aes(Rural_Classification, satisfaction)) +
   geom_boxplot(fill = "lightgray", width = 0.5) +
