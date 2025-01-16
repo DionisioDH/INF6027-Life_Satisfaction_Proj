@@ -5,6 +5,25 @@
 
 **Description**: This is the final project for INF6027 (Intro to DS) at The University of Sheffield. It is entitled "Area-Level Analysis of Life Satisfaction in England and Associated Factors". It uses 4 datasets from the UK's Office for National Statistics, primarily it uses local indicators ([ONS Local Indicators Datasets](https://explore-local-statistics.beta.ons.gov.uk/indicators)).
 
+**Motivation**: Life satisfaction is an important metric monitored by governments to promote healthy communities. This project studies life satisfaction in England in 2017, examining its geographical distribution, its changes with urban/rural classification, and its relation with local indicators. 
+
+### Research Questions and Key Findings
+
+The three research questions and their respective key findings are presented below. The geographical areas used are local authority districts (LADs).
+
+1. **How do life satisfaction scores compare spatially across LADs in England?**
+
+   **Key finding**: Southeast England (around the London area) has a high concentration of LADs with below-average life satisfaction scores. The opposite is true for southwest England. Other LADs have combinations of below- and above-average life satisfaction.
+
+2. **Are there differences in the life satisfaction scores amongst the different urban/rural classifications of LADs?**
+
+   **Key finding**: Yes. Urban areas with conurbation display below-average satisfaction. Conversely, rural areas have the highest levels of life satisfaction.
+
+3. **How do local indicators (economic, health, etc.) relate to life satisfaction across the LADs in England?**
+
+   **Key finding**: Life satisfaction has a significantly positive correlation with employment rate and time to go to work, while it has a significantly negative correlation with anxiety, smoker rate, and population density. The best Multiple Linear Regression model had an R-squared of 34.81%, which consisted of 4 of these independent variables.
+
+
 # Instructions to Execute This Project
 ----------------------------------------
 
